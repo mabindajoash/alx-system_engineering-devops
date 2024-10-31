@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#say hi on the 9th line
+i=0
+while((i < 10)); do
+    if((i == 8)); then
+        echo "hi"
+    else
+        echo "Best School"
+    fi
+    ((i++))
+done
