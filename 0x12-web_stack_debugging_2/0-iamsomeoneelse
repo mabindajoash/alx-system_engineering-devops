@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [[ $# == 1 ]]; then
+  sudo su - "$1"
+else
+  whoami
+fi
+sudo su
