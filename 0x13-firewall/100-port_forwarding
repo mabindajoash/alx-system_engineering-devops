@@ -2,9 +2,8 @@
 :PREROUTING ACCEPT [0:0]
 
 # Redirect incoming traffic from port 80 to port 8080
- -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
-
- COMMIT
+-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+COMMIT
 #
 # rules.before
 #
