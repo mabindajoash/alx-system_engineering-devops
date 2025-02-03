@@ -1,0 +1,4 @@
+sudo apt update && sudo apt install ufw -y
+sudo ufw allow 'OpenSSH'
+sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 'Nginx HTTPS'
