@@ -10,7 +10,8 @@ def top_ten(subreddit):
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
     headers = {"User-Agent": "My_app"}
     params = {"limit": 10}
-    r = requests.get(url, params=params, headers=headers, allow_redirects=False)
+    r = requests.get(url, params=params, headers=headers,
+                     allow_redirects=False)
     if r.status_code == 200:
         data = r.json()
         posts = data.get("data", {}).get("children", [])
